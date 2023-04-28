@@ -9,3 +9,4 @@ main - (entry point)
 puts("/"Programming is like building a multilingual puzzle");
 return (o)
 }
+:%s/\s\+$//e
