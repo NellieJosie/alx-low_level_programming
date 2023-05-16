@@ -5,13 +5,19 @@
  * @ac: int input
  * @av: double pointer array
  * Return: 0
-*/
+ */
+char *argstostr(int ac, char **av)
+{
+	int i, n, r = 0, l = 0;
+	char *str;
+
 	if (ac == 0 || av == NULL)
 	return (NULL);
-	or(i < ac; i++)
+
+	for (i = 0; i < ac; i++)
 	{
 	for (n = 0; av[i][n]; n++)
-	i++;
+	l++;
 	}
 	l += ac;
 	str = malloc(sizeof(char) * l + 1);
@@ -29,5 +35,5 @@
 	str[r++] = '\n';
 	}
 	}
-return (str);
+	return (str);
 }
