@@ -2,12 +2,12 @@
 #include "lists.h"
 
 /**
- * print list - prints all elements of a linked list
+ * print_list - prints all elements of a linked list
  * @h: pointer to the list_t list to print
  *
  * Return: the number of nodes printed
  */
-int size_t print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t s = 0;
 
