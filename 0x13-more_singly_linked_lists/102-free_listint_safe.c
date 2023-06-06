@@ -1,4 +1,4 @@
-#include "lists,h"
+#include "lists.h"
 
 /**
  * free_listint_safe - frees a linked list
@@ -22,9 +22,9 @@ size_t free_listint_safe(listint_t **h)
 		{
 			temp = (*h)->next;
 			free(*h);
-			*h temp;
-
+			*h =  temp;
 			len++;
+
 		}
 		else
 		{free(*h);
